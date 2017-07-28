@@ -167,12 +167,12 @@ var topRight: CGPoint {
 ```
 /// 右下角坐标
 var bottomRight: CGPoint {
-get {
-return CGPoint(x: frame.origin.x + frame.size.width, y: frame.origin.y + frame.size.height)
-}
-set(newValue) {
-frame.origin = CGPoint(x: newValue.x - width, y: newValue.y - height)
-}
+  get {
+    return CGPoint(x: frame.origin.x + frame.size.width, y: frame.origin.y + frame.size.height)
+  }
+  set(newValue) {
+    frame.origin = CGPoint(x: newValue.x - width, y: newValue.y - height)
+  }
 }
 
 ```
